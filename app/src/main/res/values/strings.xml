@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Daily Planner</string>
     <string name="H1">Календарь</string> <!-- Заголовок календаря -->
+    <string name="time">Время</string>
+    <string name="task_name">Название задачи</string>
+    <string name="time_task">%1$d : %2$d</string>
+    <string name="task">Митинг</string>
+    <string name="add_task">Добавить задачу</string>
 </resources>

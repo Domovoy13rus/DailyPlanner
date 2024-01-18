@@ -54,8 +54,9 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <LinearLayout
-        android:layout_width="354dp"
-        android:layout_height="285dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="348dp"
+        android:layout_height="116dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
@@ -63,15 +64,18 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CalendarView">
+        app:layout_constraintTop_toBottomOf="@+id/CalendarView"
+        app:layout_constraintVertical_bias="0.12">
 
         <TableLayout
             android:id="@+id/taskTableLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:stretchColumns="*">
+            android:stretchColumns="*"
+            tools:ignore="UselessParent">
 
             <!-- Заголовок таблицы -->
             <TableRow>
@@ -80,14 +84,14 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Время"
+                    android:text="@string/time"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
-                    android:text="Название дела"
+                    android:text="@string/task_name"
                     android:textStyle="bold" />
             </TableRow>
 
@@ -98,20 +102,48 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="14:00 - 15:00" />
+                    android:text="@string/time_task" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
-                    android:text="Митинг" />
+                    android:text="@string/task" />
             </TableRow>
 
-            <!-- Дополнительные записи дел можно добавить программно -->
-            <!--  ...  -->
 
         </TableLayout>
     </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="345dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_add_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/button_stroke_black_press_white"
+            android:text="@string/add_task"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
