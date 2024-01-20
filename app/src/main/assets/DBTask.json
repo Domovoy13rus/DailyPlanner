@@ -5,14 +5,14 @@
     "date_finish" : "147610000",
     "name" : "Тестовое задание",
     "description" : "Сделать тестовое задание"
-},
+  },
   {
     "id" : 2,
     "date_start" : "147620000",
     "date_finish" : "147630000",
     "name" : "Commit & Push",
     "description" : "Запушить задание на ГИТ"
-},
+  },
   {
     "id" : 3,
     "date_start" : "147720000",
