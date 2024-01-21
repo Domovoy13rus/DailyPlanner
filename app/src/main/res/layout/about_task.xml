@@ -14,7 +14,7 @@
         android:layout_marginBottom="180dp"
         android:background="@drawable/button_stroke_black_press_white"
         android:text="@string/back"
-        android:textSize="24dp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
