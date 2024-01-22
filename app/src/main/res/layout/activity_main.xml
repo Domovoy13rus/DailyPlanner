@@ -38,8 +38,8 @@
 
     <CalendarView
         android:id="@+id/CalendarView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="278dp"
+        android:layout_height="270dp"
         android:layout_gravity="center"
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
@@ -54,17 +54,18 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ScrollView
-        android:layout_width="381dp"
-        android:layout_height="205dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CalendarView">
+        app:layout_constraintTop_toBottomOf="@+id/CalendarView"
+        tools:ignore="TextSizeCheck">
 
         <LinearLayout
-            android:id="@+id/linearLayout"
+            android:id="@+id/linearLayoutTask"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
@@ -113,7 +114,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="3"
-                        android:text="@string/task" />
+                        android:text="" />
                 </TableRow>
 
                 <TableRow>
@@ -128,7 +129,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="3"
-                        android:text="@string/task" />
+                        android:text="" />
                 </TableRow>
 
                 <TableRow
@@ -145,7 +146,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="3"
-                        android:text="@string/task" />
+                        android:text="" />
                 </TableRow>
 
                 <TableRow>
@@ -160,7 +161,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="3"
-                        android:text="@string/task" />
+                        android:text="" />
                 </TableRow>
 
                 <TableRow
@@ -177,7 +178,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="3"
-                        android:text="@string/task" />
+                        android:text="" />
                 </TableRow>
 
                 <TableRow>
@@ -192,7 +193,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="3"
-                        android:text="@string/task" />
+                        android:text="" />
                 </TableRow>
 
                 <TableRow
@@ -209,7 +210,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="3"
-                        android:text="@string/task" />
+                        android:text="" />
                 </TableRow>
 
                 <TableRow>
@@ -224,8 +225,44 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="3"
+                        android:text="@string/cleaning_earth" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/eigth_oclock" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/nine_oclock" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
                         android:text="@string/task" />
                 </TableRow>
+
+
 
 
             </TableLayout>

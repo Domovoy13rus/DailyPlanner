@@ -14,6 +14,9 @@
     <string name="five_oclock">05:00</string>
     <string name="six_oclock">06:00</string>
     <string name="seven_oclock">07:00</string>
+    <string name="eigth_oclock">08:00</string>
+    <string name="nine_oclock">09:00</string>
     <string name="back">Назад</string>
     <string name="description">Описание задачи</string>
+    <string name="cleaning_earth">Привести в порядок планету</string>
 </resources>
